@@ -32,8 +32,11 @@ function App() {
 				<Switch>
 					<Route path='/' component={Home} exact />
 					<Route path='/about' component={About} />
-					<Route path='/profile'>
+					{/* <Route path='/profile'>
 						{login ? <Profile /> : <Redirect to='/' />}
+					</Route> */}
+					<Route path='/profile'>
+						<Profile login={login}/>
 					</Route>
 					<Route path='/post/:id' component={Post} />
 					<Route component={NotFound} />

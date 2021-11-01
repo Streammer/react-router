@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Home from './Pages/Home'
 import About from './Pages/About'
 import Profile from './Pages/Profile'
+import NotFound from './Pages/NotFound';
 
 function App() {
 	return (
@@ -24,6 +25,7 @@ function App() {
 				<Route path='/' component={Home} exact />
 				<Route path='/about' component={About} />
 				<Route path='/profile' component={Profile} />
+				<Route component={NotFound}/>
 			</Switch>
 
 		</BrowserRouter>
